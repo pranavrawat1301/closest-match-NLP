@@ -22,7 +22,7 @@ Here's a brief explanation of the code:
 The code creates a simple and interactive interface for finding the closest match to a user-inputted country name based on fuzzy matching with cosine similarity.
 
 
-Possible optimizations and improvements for the code:
+# Possible optimizations and improvements for the code:
 
 1. **Efficiency with RapidFuzz:**
    - Replace `fuzzywuzzy` with `rapidfuzz` for improved efficiency in fuzzy matching algorithms.
