@@ -10,7 +10,6 @@ Original file is located at
 
 import streamlit as st
 from fuzzywuzzy import process
-from rapidfuzz import fuzz
 
 
 # List of items
@@ -22,9 +21,9 @@ initial_items = ["US", "UK", "Canada", "Germany", "France", "Japan", "Australia"
 def find_closest_match(query, items):
     query = query.lower()
     items_lower = [item.lower() for item in items]
-    matches = [(item, fuzz.ratio(query, item.lower())) for item in items_lower]
-    matches.sort(key=lambda x: x[1], reverse=True)
+    matches = process.extract(query, items_lower, limit=1)
     return matches[0] if matches and matches[0][1] >= 75 else ("No match", 0)
+
 
 # Rest of the Streamlit app remains the same
 
