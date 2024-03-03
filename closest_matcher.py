@@ -17,7 +17,8 @@ initial_items = ["US", "UK", "Canada", "Germany", "France", "Japan", "Australia"
 # Function to find the closest match using fuzzy matching
 def find_closest_match(query, items):
     matches = process.extract(query, items, limit=1)
-    return matches[0] if matches and matches[0][1] >= 80 else ("No match", 0)
+    return matches[0] if matches and matches[0][1] >= 75 else ("No match", 0)
+
 
 # Streamlit app
 def main():
