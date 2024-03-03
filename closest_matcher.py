@@ -37,7 +37,7 @@ def main():
     st.sidebar.write(initial_items)
 
     # Find the closest match
-    closest_match, confidence = find_closest_match(user_input, items)
+    closest_match, confidence = find_closest_match(user_input, initial_items)
 
     # Display result
     st.write(f"Closest match: {closest_match}")
