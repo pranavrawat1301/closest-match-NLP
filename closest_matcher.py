@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/15xQ-yFMcrDpkWMOPhR177D0yftmUw8Ml
 """
 
-pip install streamlit rapidfuzz
+# pip install streamlit rapidfuzz
 
 import streamlit as st
 from rapidfuzz import process
