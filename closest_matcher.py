@@ -12,7 +12,7 @@ import streamlit as st
 from fuzzywuzzy import process
 
 # List of items
-items = ["US", "UK", "Canada", "Germany", "France", "Japan", "Australia", "China", "India", "Brazil"]
+initial_items = ["US", "UK", "Canada", "Germany", "France", "Japan", "Australia", "China", "India", "Brazil"]
 
 # Function to find the closest match using fuzzy matching
 def find_closest_match(query, items):
